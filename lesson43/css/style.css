@@ -105,7 +105,9 @@
 
 .body__text {
     display: block;
-
+}
+.body__text:first-child{
+    margin-bottom: 15px;
 }
 
 .body__text-link {

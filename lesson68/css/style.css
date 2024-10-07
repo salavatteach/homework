@@ -1,0 +1,140 @@
+.wrapper {
+    background-color: #fff;
+    font-family: "Montserrat", "Arial", sans-serif;
+    width: 100%;
+    /* max-width: 1440px; */
+    line-height: 150%;
+    ;
+    overflow: hidden;
+    color: #25282b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1d6fb6;
+    text-align: center;
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 288px;
+    height: 56px;
+    background-color: #d0dce7;
+    transition: all .3s;
+}
+.button:hover{
+    color: #fff;
+    background-color:#83add3;
+    transform: scale(1.1);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px auto;
+
+}
+
+.header__nav-menu {
+    margin-right: 203px;
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 10px 30px;
+}
+
+.header__menu-item {
+    /* margin-right: 30px; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    transition: all .3s;
+}
+
+/* 
+.header__menu-item:last-child {
+    margin-right: 0;
+} */
+
+.header__menu-item:hover {
+    color: #1d6fb6;
+}
+
+.header__nav-social {
+    margin-left: 287px;
+}
+
+.header__social-list {
+    display: flex;
+    gap: 10px 30px;
+}
+
+.header__social-item {
+    /* margin-right: 30px; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    transition: all .3s;
+}
+
+/* .header__social-item:last-child {
+    margin-right: 0;
+} */
+
+.header__social-item :hover {
+    color: #1d6fb6;
+}
+
+/* *******************************header__top*********************************** */
+/* *******************************header__body********************************** */
+
+.header__body {
+    background: url("../lesson68/image/видео1.jpg");
+}
+
+.header__body-title {
+    padding-top: 147px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.header__body-block {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.header__body-list {
+    display: block;
+    margin: auto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #fff;
+    transition: all .3s;
+}
+
+.header__body-item svg {
+    margin-right: 19px;
+}
+.header__body-item:hover{
+color: #1d6fb6;
+}
+
+.header__body-button{
+    padding-bottom: 93px ;
+}
+
+

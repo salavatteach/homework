@@ -97,7 +97,8 @@
 /* *******************************header__body********************************** */
 
 .header__body {
-    background: url("../lesson68/image/видео1.jpg");
+    
+    background: url("../image/video.jpg");
 }
 
 .header__body-title {

@@ -8,15 +8,23 @@ function nameUsers(user) {
 console.log(nameUsers())
 
 
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 function checkForNumbers(array) {
     for (let index = 0; index < array.length; index++) {
-        if (array[index] > 10) {
-            return `${array[index]}`
+        if (array[index] >= 10) {
+            console.log(array[index])
+
         }
     }
-    return `The not finded`
+}
+checkForNumbers(numbers)
+
+function diffNumbers(num1,num2){
+return num1 - num2
 }
 
-console.log(checkForNumbers(numbers, 5))
+const resault = diffNumbers(10,12)
+console.log(resault)
+
+

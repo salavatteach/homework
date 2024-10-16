@@ -20,11 +20,21 @@ function checkForNumbers(array) {
 }
 checkForNumbers(numbers)
 
-function diffNumbers(num1,num2){
-return num1 - num2
+function diffNumbers(num1, num2, action) {
+    if (action === '-') {
+        return num1 - num2
+    } else if (action === '+') {
+        return num1 + num2
+    } else if (action === '*') {
+        return num1 * num2
+    } else if (action === '/') {
+        return num1 / num2
+    } else {
+    console.log(diffNumbers())
+    } 
 }
 
-const resault = diffNumbers(10,12)
+const resault = diffNumbers(10, 12, '*')
 console.log(resault)
 
 

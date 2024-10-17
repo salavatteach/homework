@@ -51,11 +51,11 @@ const users = [
     }
 
 ]
-const notAdmin = 0
+let notAdmin = 0
 for (let i = 0; i < users.length; i++) {
     if(users[i].isAdmin == false){
-        const resault = notAdmin + 1
-        console.log(resault)
+         notAdmin++
+        }
     }
-}
-
+    
+    console.log(notAdmin)

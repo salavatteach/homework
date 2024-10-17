@@ -29,12 +29,14 @@ function diffNumbers(num1, num2, action) {
         return num1 * num2
     } else if (action === '/') {
         return num1 / num2
-    } else {
-    console.log(diffNumbers())
     } 
+    console.log('Error!!!')
 }
 
-const resault = diffNumbers(10, 12, '*')
+// const resault = diffNumbers(10, 12, '*')
+// const resault = diffNumbers(10, 12, '/')
+// const resault = diffNumbers(10, 12, '+')
+const resault = diffNumbers('h', 'h', '5')
 console.log(resault)
 
 

@@ -21,20 +21,16 @@
 }
 
 
-)()
-// const body = document.querySelector('.body')
-// const buttonBurger = document.querySelector('.burger-icon')
-// const navLink = document.querySelector('.nav__list')
+)
 
-// buttonBurger.addEventListener('click', () => {
-//     body.classList.add('body--opened-menu')
-// })
+const openModal = document.querySelector('.about__img-button')
+const modal = document.querySelector('.modal')
 
-// const closeNav = () => {
-//     body.classList.remove('body--opened-menu')
-// }
-
-// navLink.addEventListener('click', () => {
-//     closeNav()
-// }
-// )
+openModal.addEventListener('click', () => {
+    modal.classList.add('modal--opened')
+})
+modal.addEventListener('click', (event) => {
+    const target = event.target
+    if (target && target.classList.contains('modal__cancel') ||  target && target.classList.contains('modal')){
+        modal.classList.remove('modal--opened')}
+})

@@ -18,19 +18,28 @@
 
     }
 
+
+const btnModal = document.querySelector('.about__img-button')
+const modal = document.querySelector('.modal')
+
+
+
+
+btnModal.addEventListener('click', openModal)
+modal.addEventListener('click', closeModal)  
+
+   function openModal(e) {
+    e.preventDefault()
+    modal.classList.add('modal--opened')
+}
+
+function closeModal(e) {
+    e.preventDefault()
+
+    const target = e.target
+    if ( target.closest('.modal__cancel') ||target.classList.contains('modal')){
+        modal.classList.remove('modal--opened')}
 }
 
 
-)
-
-const openModal = document.querySelector('.about__img-button')
-const modal = document.querySelector('.modal')
-
-openModal.addEventListener('click', () => {
-    modal.classList.add('modal--opened')
-})
-modal.addEventListener('click', (event) => {
-    const target = event.target
-    if (target && target.classList.contains('modal__cancel') ||  target && target.classList.contains('modal')){
-        modal.classList.remove('modal--opened')}
-})
+})()

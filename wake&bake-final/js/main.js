@@ -114,7 +114,7 @@
         loop: true,
 
         slidesPerView: 2,
-        spaceBetween: 32,
+        spaceBetween: 16,
 
         pagination: {
             el: '.gallery__pagination',

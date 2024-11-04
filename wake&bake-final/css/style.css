@@ -564,7 +564,7 @@
 }
 
 .comment__scroll {
-    border-radius: 50%;
+    border-radius: 50px;
     height: 7px;
     background: var(--accent-bg);
 }
@@ -1005,8 +1005,10 @@
 
 
 @media (max-width:600px) {
-    .main__about .main__gallery .main__programm .main__comment {
-        padding: 0 0 80px;
+    .main__gallery ,
+    .main__programm ,
+    .main__comment {
+        margin-bottom:40px;
     }
 
 
@@ -1136,20 +1138,20 @@
         font-size: 25px;
     }
 
-    .gallery__prev,
+    /* .gallery__prev,
     .gallery__next,
     .accord__button__arrow {
         width: 30px;
         height: 30px;
-    }
+    } */
 
-    .gallery__prev svg,
+    /* .gallery__prev svg,
     .gallery__next svg,
     .accord__button__arrow svg {
         width: 13px;
         height: 13px;
         margin: 8px;
-    }
+    } */
 
     .accord__content-list {
         gap: 12px;

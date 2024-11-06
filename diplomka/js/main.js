@@ -2,40 +2,28 @@
 
     // Аккордеон навигации
 
-    const accordList = document.querySelectorAll('.nav__list')
-
-    accordList.forEach(el => {
-        el.addEventListener('click', (e) => {
-
-            const accordList = e.currentTarget
-            const accordOpenedItem = accordList.querySelector('.nav__accord--active')
-            const accordOpenedContent = accordList.querySelector('.nav__accord--active.nav__accord-list')
-
-            const accordControll = e.target.closest('.nav__link-btn')
-
-            if (!accordControll) return
-
-            e.preventDefault()
-            const accordItem = accordControll.parentElement;
-            const accordContent = accordControll.nextElementSibling;
-
-            // if (accordOpenedItem && accordItem != accordOpenedItem) {
-            //     accordOpenedItem.classList.remove('nav__accord--active')
-            //     accordOpenedContent.style.maxHeight = null
-
-            // }
+    const dropBtn = document.querySelector('.dropdown-btn')
+    const dropContentOpen = dropBtn.parentElement
+    const wrapper = document.querySelector('.wrapper')
 
 
-            accordItem.classList.toggle('nav__accord--active')
+    wrapper.addEventListener('click', (e) => {
+        const target = e.target
+        console.log(target)
+        if (target && target.classList.contains('dropdown-btn')) {
 
-            if (accordItem.classList.contains('nav__accord--active')) {
-                accordContent.style.maxHeight = accordContent.scrollHeight + 'px'
-            } else {
-                accordContent.style.maxHeight = null
-            }
+            dropContentOpen.classList.add('dropdown--active')
+        }
+        else if (dropContentOpen.classList.contains('dropdown--active')) {
 
+            dropContentOpen.classList.remove('dropdown--active')
 
-        })
+        }
+        else {
+            dropContentOpen.classList.remove('dropdown--active')
+
+        }
     })
+
 
 })()

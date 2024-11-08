@@ -549,7 +549,7 @@ body {
         padding: 50px 57px;
     }
     
-    .dropdown-list {
+    .dropdown--active .dropdown-list {
         padding: 15px 10px;}
     
     .header__main-btn {

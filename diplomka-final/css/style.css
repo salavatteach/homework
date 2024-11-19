@@ -1,3 +1,4 @@
+@import"media.css";
 @import"global.css";
 @import"header.css";
 @import"footer.css";
@@ -456,7 +457,7 @@
     transition: var(--transition);
 }
 
-.accord--open-active .accord__content p {
+.accord--open-active .accord__content  {
     opacity: 1;
     visibility: visible;
 
@@ -476,16 +477,15 @@
 
 .accord__content {
     display: flex;
-    align-items: center;
+    align-items: start;
     line-height: 1.6;
     color: var(--general-grey);
     transition: max-height .4s ease-out;
     max-height: 0px;
-}
-.accord__content p {
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
+
 }
 
 .accord__content-btn {
@@ -1109,13 +1109,21 @@
     flex-direction: column;
     align-items: start;
     overflow: hidden;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 30px;
     max-width: 390px;
+    transition: var(--transition);
+    box-shadow: 0px 15px 15px 0px rgba(34, 60, 80, 0.16);
+}
+
+.news__card-link:hover {
     box-shadow: 0px 15px 55px 0px rgba(34, 60, 80, 0.16);
+
 }
 
 .news__card-link:hover .news__card-btn {
     transform: scale(1.2) translateX(10%);
+
 }
 
 .news__card-img img {
@@ -1162,17 +1170,19 @@
     font-size: 16px;
     line-height: 1.6;
     color: var(--accent-black);
-    margin-right: 11px;
     transition: var(--transition);
 
     transform: scale(1) translateX(0);
 }
 
+.news__card-btn svg{
+    margin-left: 10px;
 
-
+}
 
 /*****************************************************************/
 /*****************************************************************/
+
 @media (max-width:1260px) {
 
     .header__main-img {
@@ -1526,8 +1536,8 @@
     }
 
     /*-----------------------------------------------*/
-    .main__news{
-        margin: 80px 0 ;
+    .main__news {
+        margin: 80px 0;
     }
 }
 
